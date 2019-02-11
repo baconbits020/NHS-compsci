@@ -1,0 +1,85 @@
+<html>
+<h1> HElloooo</h1>
+	</head>
+	<body>
+	
+	<style>
+	table, tr, td {
+	   border:solid 2px;
+ @@ -16,7 +17,8 @@ <h1> HElloooo</h1>
+	<script>
+	function clicked_one(){
+	document.getElementById('thetextbox').value+='1';
+	}function clicked_two(){
+	}
+	function clicked_two(){
+	document.getElementById('thetextbox').value+='2';
+	}
+	function clicked_three(){
+ @@ -43,33 +45,49 @@ <h1> HElloooo</h1>
+	function clicked_zero(){
+	document.getElementById('thetextbox').value+='0';
+	}
+	function clicked_add(){
+	document.getElementById('thetextbox').value+='+';
+	}
+	function clicked_sub(){
+	document.getElementById('thetextbox').value+='-';
+	}
+	function clicked_divide(){
+	document.getElementById('thetextbox').value+='/';
+	}
+	function clicked_equals(){
+	var result = eval(document.getElementById('thetextbox').value);
+	document.getElementById('thetextbox').value=result;
+	}
+	function clicked_mult(){
+	document.getElementById('thetextbox').value+='*';
+	}
+	</script>
+	<table>
+	<tr>
+	 <td colspan="4" style="background-color:lightblue"><input type="text" id="thet$
+	 <td colspan="4" style="background-color:lightblue"><input type="text" id="thetextbox"></input></td>
+	</tr>
+	<tr>
+	 <td style="background-color:blue"><input type="button" value="#1" onclick="cli$
+	 <td style="background-color:blue"><input type="button" value="#2" onclick="cli$
+	 <td style="background-color:blue"><input type="button" value="#3" onclick="cli$
+	 <td style="background-color:blue"> <input type="button" value="devide"></td>
+	 <td style="background-color:blue"><input type="button" value="1" onclick="clicked_one()"></input></td>
+	 <td style="background-color:blue"><input type="button" value="2" onclick="clicked_two()"></input></td>
+	 <td style="background-color:blue"><input type="button" value="3" onclick="clicked_three()"></input></td>
+	 <td style="background-color:blue"> <input type="button" value="/"onclick= "clicked_divide()"></input></td>
+	</tr>
+	<tr>
+	 <td style="background-color:blue"> <input type="button" value="#4" onclick="cl$
+	 <td style="background-color:blue"> <input type="button" value="#5" onclick="cl$
+	 <td style="background-color:blue"> <input type="button" value="#6" onclick="cl$
+	 <td style="background-color:blue"> <input type="button" value="subtract"></td>
+	 <td style="background-color:blue"> <input type="button" value="4" onclick="clicked_four()" ></input> </td>
+	 <td style="background-color:blue"> <input type="button" value="5" onclick="clicked_five()"></input></td>
+	 <td style="background-color:blue"> <input type="button" value="6" onclick="clicked_six()"></input></td>
+	 <td style="background-color:blue"> <input type="button" value="-"onclick="clicked_sub()"></input></td>
+	</tr>
+	<tr>
+	 <td style="background-color:blue"> <input type="button" value="#7" onclick="cl$
+	 <td style="background-color:blue"> <input type="button" value="#8" onclick="cl$
+	 <td style="background-color:blue"> <input type="button" value="#9" onclick="cl$
+	 <td style="background-color:blue"> <input type="button" value="add"></td>
+	 <td style="background-color:blue"> <input type="button" value="7" onclick="clicked_seven()" ></input></td>
+	 <td style="background-color:blue"> <input type="button" value="8" onclick="clicked_eight()"></input></td>
+	 <td style="background-color:blue"> <input type="button" value="9" onclick="clicked_nine()"></input></td>
+	 <td style="background-color:blue"> <input type="button" value="+"onclick="clicked_add()"></input></td>
+	</tr>
+	<tr>
+	 <td colspan="2" style="background-color:blue"><input type="button" value="#0" $
+	  <td style="background-color:blue"><input type="button" value="="></td>
+	   <td style="background-color:blue"><input type="button" value="multiply"></td>
+	 <td colspan="2" style="background-color:blue"><input type="button" value="0" onclick="clicked_zero()"></i$
+	  <td style="background-color:blue"><input type="button" value="=" onclick="clicked_equals()"></input></td>
+	   <td style="background-color:blue"><input type="button" value="*"onclick="clicked_mult()"></input></td>
+	</tr>
+	</table>
+	</body>
+  </html>
