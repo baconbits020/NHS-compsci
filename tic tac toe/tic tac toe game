@@ -23,7 +23,7 @@ div {	border-style: solid;
 	//if (button.value == "X") {
     ///document.getElementById('oneB');
     //document.getElementById('oneC');{
-    //alert("Congradulations, X's have won.");
+    //alert("Congradulations, X's won.");
     //else {
     //return false
     //}
@@ -93,7 +93,7 @@ function click_threeC() {
 </script>
 
 
-<h1>Select a gamemode</h1>
+<h1>Pick a game</h1>
 <input type='button' style="background-color:#b5afff;width:150px;" onclick='click_HS' value="player 1 vs. player 2"></input><input type='button' style="background-color:#afdfff;display:inline-block" onclick='click_AI' value="player 1 vs Computer"></input><br><br><br>
 
 <div style="background-color:pink;display:inline-block;width:100px;height:100px;"><input type="button" style="width:100px;height:100px;"onclick="click_oneA()" id="oneA" value=" "></input></div><div style="background-color:pink;display:inline-block;width:100px;height:100px;"><input type="button" style="width:100px;height:100px;"onclick="click_oneB()" id="oneB" value=" "></input></div><div style="background-color:pink;display:inline-block;width:100px;height:100px;" ><input type="button" style="width:100px;height:100px;"onclick="click_oneC()" id="oneC" value=" "></input></div><br>
