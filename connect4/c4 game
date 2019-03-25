@@ -1,0 +1,48 @@
+<html>
+<title>Four Square</title>
+<head>
+
+<style>
+div {	border-style: solid;
+		border-color:black;
+        border-width:2px;
+}
+</style>
+
+
+<script>
+turn = 'X';
+function toggle(){
+if (turn == 'X')
+	turn = 'O'
+   else
+   turn = 'X';
+  }
+  
+  
+function click_one(){
+	if (document.getElementById('sixA'));
+    	document.getElementById('sixA').style.color='#00f2ff'
+        else {
+        document.getElementById('sixA').style.color='#ff0000'
+    	    }
+		}
+</script>
+
+<input type="button" style="background-color:white;width:84px;height:30px;display:inline-block;" onclick="click_one()" value="One"></input><input type="button" style="background-color:white;width:84px;height:30px;" onclick="click_two()" value="Two"></input><input type="button" style="background-color:white;width:84px;height:30px;" onclick="click_three()" value="Three"></input><input type="button" style="background-color:white;width:84px;height:30px;" onclick="click_four()" value="Four"></input><input type="button" style="background-color:white;width:84px;height:30px;" onclick="click_five()" value="Five"></input><input type="button" style="background-color:white;width:84px;height:30px;" onclick="click_six()" value="Six"></input><input type="button" style="background-color:white;width:84px;height:30px;" onclick="click_seven()" value="Seven"></input><br>
+
+<div style="background-color:white;display:inline-block;width:80px;height:80px;" id="oneA"></div><div style="background-color:white;display:inline-block;width:80px;height:80px;" id="oneB"></div><div style="background-color:white;display:inline-block;width:80px;height:80px;" id="oneC"></div><div style="background-color:white;display:inline-block;width:80px;height:80px;" id="oneD"></div><div style="background-color:white;display:inline-block;width:80px;height:80px;" id="oneE"></div><div style="background-color:white;display:inline-block;width:80px;height:80px;"id="oneF"></div><div style="background-color:white;display:inline-block;width:80px;height:80px;" id="oneG"></div><br>
+
+<div style="background-color:white;display:inline-block;width:80px;height:80px;" id="twoA"></div><div style="background-color:white;display:inline-block;width:80px;height:80px;" id="twoB"></div><div style="background-color:white;display:inline-block;width:80px;height:80px;" id="twoC"></div><div style="background-color:white;display:inline-block;width:80px;height:80px;" id="twoD"></div><div style="background-color:white;display:inline-block;width:80px;height:80px;" id="twoE"></div><div style="background-color:white;display:inline-block;width:80px;height:80px;"id="twoF"></div><div style="background-color:white;display:inline-block;width:80px;height:80px;" id="twoG"></div><br>
+
+<div style="background-color:white;display:inline-block;width:80px;height:80px;" id="threeA"></div><div style="background-color:white;display:inline-block;width:80px;height:80px;" id="threeB"></div><div style="background-color:white;display:inline-block;width:80px;height:80px;" id="threeC"></div><div style="background-color:white;display:inline-block;width:80px;height:80px;" id="threeD"></div><div style="background-color:white;display:inline-block;width:80px;height:80px;" id="threeE"></div><div style="background-color:white;display:inline-block;width:80px;height:80px;" id="threeF"></div><div style="background-color:white;display:inline-block;width:80px;height:80px;" id="threeG"></div><br>
+
+<div style="background-color:white;display:inline-block;width:80px;height:80px;" id="fourA"></div><div style="background-color:white;display:inline-block;width:80px;height:80px;" id="fourB"></div><div style="background-color:white;display:inline-block;width:80px;height:80px;" id="fourC"></div><div style="background-color:white;display:inline-block;width:80px;height:80px;" id="fourD"></div><div style="background-color:white;display:inline-block;width:80px;height:80px;" id="fourE"></div><div style="background-color:white;display:inline-block;width:80px;height:80px;" id="fourF"></div><div style="background-color:white;display:inline-block;width:80px;height:80px;" id="fourG"></div><br>
+
+<div style="background-color:white;display:inline-block;width:80px;height:80px;" id="fiveA"></div><div style="background-color:white;display:inline-block;width:80px;height:80px;" id="fiveB"></div><div style="background-color:white;display:inline-block;width:80px;height:80px;" id="fiveC"></div><div style="background-color:white;display:inline-block;width:80px;height:80px;" id="fiveD"></div><div style="background-color:white;display:inline-block;width:80px;height:80px;" id="fiveE"></div><div style="background-color:white;display:inline-block;width:80px;height:80px;" id="fiveF"></div><div style="background-color:white;display:inline-block;width:80px;height:80px;" id="fiveG"></div><br>
+
+<div style="background-color:white;display:inline-block;width:80px;height:80px;" id="sixA"></div><div style="background-color:white;display:inline-block;width:80px;height:80px;" id="sixB"></div><div style="background-color:white;display:inline-block;width:80px;height:80px;" id="sixC"></div><div style="background-color:white;display:inline-block;width:80px;height:80px;" id="sixD"></div><div style="background-color:white;display:inline-block;width:80px;height:80px;" id="sixE"></div><div style="background-color:white;display:inline-block;width:80px;height:80px;" onclick="click_sixF" id="sixF"></div><div style="background-color:white;display:inline-block;width:80px;height:80px;" id="sixG"></div><br>
+
+
+</body>
+</html>
