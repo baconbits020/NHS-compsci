@@ -1,57 +1,229 @@
-
 <html>
 <title>Four Square</title>
 <head>
 
 <style>
 div {	border-style: solid;
-		border-color:blue;
+		border-color:black;
         border-width:2px;
 }
 </style>
 
 
 <script>
-var red = ' #cc2900';
-red = ' #cc2900';
-var blue = '#66b3ff'; 
-blue = '#66b3ff';
-var white = ' #d9d9d9';
-white = ' #d9d9d9';
-turn = red;
+var red = '#cc0000';
+red= '#cc0000';
+var blue = ' #1a53ff'; 
+blue = ' #1a53ff';
+var white = ' #cccccc';
+white = ' #cccccc';
+turn = 'red';
 function toggle() {
-  if (turn==red)
-    turn = blue;
-  else
-	turn = red;
+    if (turn == 'red')
+        turn = 'blue';
+    else
+        turn = 'red';
 }
-function click_one(){
-	document.getElementById('sixA')
-    if (document.getElementById('sixA').style.backgroundColor='white')
-    	document.getElementById('sixA').style.backgroundColor= red;
-        else {
-        document.getElementById('sixA').style.backgroundColor='white';
-    	    }
-         if (document.getElementById('sixA')=red)
-            document.getElementById('fiveA').style.backgroundColor=blue;
-            else {
-            document.getElementById('fiveA').style.backgroundColor=red
-            }
-		}
- 
-//function click_one(){
-//	var box = document.getElementById('sixA');
-  //  if (box.style.backgroundColor==white) {
-    //	box.style.backgroundColor = red;
-      // }
-		//else {
-        //box.style.backgroundCOlor = blue;
-     //	}
-     //}
- //}
+function click_one() {
+	// If bottom row is empty, go there
+    if (document.getElementById('sixA').style.backgroundColor == 'white') {
+    	document.getElementById('sixA').style.backgroundColor = turn;
+        toggle(); 
+    }
+    else if (document.getElementById('fiveA').style.backgroundColor == 'white') {
+    	document.getElementById('fiveA').style.backgroundColor = turn;
+        toggle(); 
+    }
+    else if (document.getElementById('fourA').style.backgroundColor == 'white'){
+    	document.getElementById('fourA').style.backgroundColor = turn;
+        toggle();
+    }
+    else if (document.getElementById('threeA').style.backgroundColor == 'white') {
+    	document.getElementById('threeA').style.backgroundColor = turn;
+        toggle(); 
+    }
+    else if (document.getElementById('twoA').style.backgroundColor == 'white'){
+    	document.getElementById('twoA').style.backgroundColor = turn;
+        toggle();
+    }
+    else if (document.getElementById('oneA').style.backgroundColor == 'white') {
+    	document.getElementById('oneA').style.backgroundColor = turn;
+        toggle(); 
+    }
+    
+}
+function click_two() {
+	// If bottom row is empty, go there
+    if (document.getElementById('sixB').style.backgroundColor == 'white') {
+    	document.getElementById('sixB').style.backgroundColor = turn;
+        toggle(); 
+    }
+    else if (document.getElementById('fiveB').style.backgroundColor == 'white') {
+    	document.getElementById('fiveB').style.backgroundColor = turn;
+        toggle(); 
+    }
+    else if (document.getElementById('fourB').style.backgroundColor == 'white'){
+    	document.getElementById('fourB').style.backgroundColor = turn;
+        toggle();
+    }
+    else if (document.getElementById('threeB').style.backgroundColor == 'white') {
+    	document.getElementById('threeB').style.backgroundColor = turn;
+        toggle(); 
+    }
+    else if (document.getElementById('twoB').style.backgroundColor == 'white'){
+    	document.getElementById('twoB').style.backgroundColor = turn;
+        toggle();
+    }
+    else if (document.getElementById('oneB').style.backgroundColor == 'white') {
+    	document.getElementById('oneB').style.backgroundColor = turn;
+        toggle(); 
+    }
+    
+}
+function click_three() {
+	// If bottom row is empty, go there
+    if (document.getElementById('sixC').style.backgroundColor == 'white') {
+    	document.getElementById('sixC').style.backgroundColor = turn;
+        toggle(); 
+    }
+    else if (document.getElementById('fiveC').style.backgroundColor == 'white') {
+    	document.getElementById('fiveC').style.backgroundColor = turn;
+        toggle(); 
+    }
+    else if (document.getElementById('fourC').style.backgroundColor == 'white'){
+    	document.getElementById('fourC').style.backgroundColor = turn;
+        toggle();
+    }
+    else if (document.getElementById('threeC').style.backgroundColor == 'white') {
+    	document.getElementById('threeC').style.backgroundColor = turn;
+        toggle(); 
+    }
+    else if (document.getElementById('twoC').style.backgroundColor == 'white'){
+    	document.getElementById('twoC').style.backgroundColor = turn;
+        toggle();
+    }
+    else if (document.getElementById('oneC').style.backgroundColor == 'white') {
+    	document.getElementById('oneC').style.backgroundColor = turn;
+        toggle(); 
+    }
+    
+}
+function click_four() {
+	// If bottom row is empty, go there
+    if (document.getElementById('sixD').style.backgroundColor == 'white') {
+    	document.getElementById('sixD').style.backgroundColor = turn;
+        toggle(); 
+    }
+    else if (document.getElementById('fiveD').style.backgroundColor == 'white') {
+    	document.getElementById('fiveD').style.backgroundColor = turn;
+        toggle(); 
+    }
+    else if (document.getElementById('fourD').style.backgroundColor == 'white'){
+    	document.getElementById('fourD').style.backgroundColor = turn;
+        toggle();
+    }
+    else if (document.getElementById('threeD').style.backgroundColor == 'white') {
+    	document.getElementById('threeD').style.backgroundColor = turn;
+        toggle(); 
+    }
+    else if (document.getElementById('twoD').style.backgroundColor == 'white'){
+    	document.getElementById('twoD').style.backgroundColor = turn;
+        toggle();
+    }
+    else if (document.getElementById('oneD').style.backgroundColor == 'white') {
+    	document.getElementById('oneD').style.backgroundColor = turn;
+        toggle(); 
+    }
+    
+}
+function click_five() {
+	// If bottom row is empty, go there
+    if (document.getElementById('sixE').style.backgroundColor == 'white') {
+    	document.getElementById('sixE').style.backgroundColor = turn;
+        toggle(); 
+    }
+    else if (document.getElementById('fiveE').style.backgroundColor == 'white') {
+    	document.getElementById('fiveE').style.backgroundColor = turn;
+        toggle(); 
+    }
+    else if (document.getElementById('fourE').style.backgroundColor == 'white'){
+    	document.getElementById('fourE').style.backgroundColor = turn;
+        toggle();
+    }
+    else if (document.getElementById('threeE').style.backgroundColor == 'white') {
+    	document.getElementById('threeE').style.backgroundColor = turn;
+        toggle(); 
+    }
+    else if (document.getElementById('twoE').style.backgroundColor == 'white'){
+    	document.getElementById('twoE').style.backgroundColor = turn;
+        toggle();
+    }
+    else if (document.getElementById('oneE').style.backgroundColor == 'white') {
+    	document.getElementById('oneE').style.backgroundColor = turn;
+        toggle(); 
+    }
+    
+}
+function click_six() {
+	// If bottom row is empty, go there
+    if (document.getElementById('sixF').style.backgroundColor == 'white') {
+    	document.getElementById('sixF').style.backgroundColor = turn;
+        toggle(); 
+    }
+    else if (document.getElementById('fiveF').style.backgroundColor == 'white') {
+    	document.getElementById('fiveF').style.backgroundColor = turn;
+        toggle(); 
+    }
+    else if (document.getElementById('fourF').style.backgroundColor == 'white'){
+    	document.getElementById('fourF').style.backgroundColor = turn;
+        toggle();
+    }
+    else if (document.getElementById('threeF').style.backgroundColor == 'white') {
+    	document.getElementById('threeF').style.backgroundColor = turn;
+        toggle(); 
+    }
+    else if (document.getElementById('twoF').style.backgroundColor == 'white'){
+    	document.getElementById('twoF').style.backgroundColor = turn;
+        toggle();
+    }
+    else if (document.getElementById('oneF').style.backgroundColor == 'white') {
+    	document.getElementById('oneF').style.backgroundColor = turn;
+        toggle(); 
+    }
+    
+}
+function click_seven() {
+	// If bottom row is empty, go there
+    if (document.getElementById('sixG').style.backgroundColor == 'white') {
+    	document.getElementById('sixG').style.backgroundColor = turn;
+        toggle(); 
+    }
+    else if (document.getElementById('fiveG').style.backgroundColor == 'white') {
+    	document.getElementById('fiveG').style.backgroundColor = turn;
+        toggle(); 
+    }
+    else if (document.getElementById('fourG').style.backgroundColor == 'white'){
+    	document.getElementById('fourG').style.backgroundColor = turn;
+        toggle();
+    }
+    else if (document.getElementById('threeG').style.backgroundColor == 'white') {
+    	document.getElementById('threeG').style.backgroundColor = turn;
+        toggle(); 
+    }
+    else if (document.getElementById('twoG').style.backgroundColor == 'white'){
+    	document.getElementById('twoG').style.backgroundColor = turn;
+        toggle();
+    }
+    else if (document.getElementById('oneG').style.backgroundColor == 'white') {
+    	document.getElementById('oneG').style.backgroundColor = turn;
+        toggle(); 
+    }
+    
+}
 </script>
 
 <input type="button" style="background-color:white;width:84px;height:30px;display:inline-block;" onclick="click_one()" value="One"></input><input type="button" style="background-color:white;width:84px;height:30px;" onclick="click_two()" value="Two"></input><input type="button" style="background-color:white;width:84px;height:30px;" onclick="click_three()" value="Three"></input><input type="button" style="background-color:white;width:84px;height:30px;" onclick="click_four()" value="Four"></input><input type="button" style="background-color:white;width:84px;height:30px;" onclick="click_five()" value="Five"></input><input type="button" style="background-color:white;width:84px;height:30px;" onclick="click_six()" value="Six"></input><input type="button" style="background-color:white;width:84px;height:30px;" onclick="click_seven()" value="Seven"></input><br>
+<br></br>
 
 <div style="background-color:white;display:inline-block;width:80px;height:80px;" id="oneA"></div><div style="background-color:white;display:inline-block;width:80px;height:80px;" id="oneB"></div><div style="background-color:white;display:inline-block;width:80px;height:80px;" id="oneC"></div><div style="background-color:white;display:inline-block;width:80px;height:80px;" id="oneD"></div><div style="background-color:white;display:inline-block;width:80px;height:80px;" id="oneE"></div><div style="background-color:white;display:inline-block;width:80px;height:80px;"id="oneF"></div><div style="background-color:white;display:inline-block;width:80px;height:80px;" id="oneG"></div><br>
 
