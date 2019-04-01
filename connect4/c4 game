@@ -1,32 +1,54 @@
+
 <html>
 <title>Four Square</title>
 <head>
 
 <style>
 div {	border-style: solid;
-		border-color:black;
+		border-color:blue;
         border-width:2px;
 }
 </style>
 
 
 <script>
-turn = 'X';
-function toggle(){
-if (turn == 'X')
-	turn = 'O'
-   else
-   turn = 'X';
-  }
-  
-  
+var red = ' #cc2900';
+red = ' #cc2900';
+var blue = '#66b3ff'; 
+blue = '#66b3ff';
+var white = ' #d9d9d9';
+white = ' #d9d9d9';
+turn = red;
+function toggle() {
+  if (turn==red)
+    turn = blue;
+  else
+	turn = red;
+}
 function click_one(){
-	if (document.getElementById('sixA'));
-    	document.getElementById('sixA').style.color='#00f2ff'
+	document.getElementById('sixA')
+    if (document.getElementById('sixA').style.backgroundColor='white')
+    	document.getElementById('sixA').style.backgroundColor= red;
         else {
-        document.getElementById('sixA').style.color='#ff0000'
+        document.getElementById('sixA').style.backgroundColor='white';
     	    }
+         if (document.getElementById('sixA')=red)
+            document.getElementById('fiveA').style.backgroundColor=blue;
+            else {
+            document.getElementById('fiveA').style.backgroundColor=red
+            }
 		}
+ 
+//function click_one(){
+//	var box = document.getElementById('sixA');
+  //  if (box.style.backgroundColor==white) {
+    //	box.style.backgroundColor = red;
+      // }
+		//else {
+        //box.style.backgroundCOlor = blue;
+     //	}
+     //}
+ //}
 </script>
 
 <input type="button" style="background-color:white;width:84px;height:30px;display:inline-block;" onclick="click_one()" value="One"></input><input type="button" style="background-color:white;width:84px;height:30px;" onclick="click_two()" value="Two"></input><input type="button" style="background-color:white;width:84px;height:30px;" onclick="click_three()" value="Three"></input><input type="button" style="background-color:white;width:84px;height:30px;" onclick="click_four()" value="Four"></input><input type="button" style="background-color:white;width:84px;height:30px;" onclick="click_five()" value="Five"></input><input type="button" style="background-color:white;width:84px;height:30px;" onclick="click_six()" value="Six"></input><input type="button" style="background-color:white;width:84px;height:30px;" onclick="click_seven()" value="Seven"></input><br>
@@ -41,7 +63,7 @@ function click_one(){
 
 <div style="background-color:white;display:inline-block;width:80px;height:80px;" id="fiveA"></div><div style="background-color:white;display:inline-block;width:80px;height:80px;" id="fiveB"></div><div style="background-color:white;display:inline-block;width:80px;height:80px;" id="fiveC"></div><div style="background-color:white;display:inline-block;width:80px;height:80px;" id="fiveD"></div><div style="background-color:white;display:inline-block;width:80px;height:80px;" id="fiveE"></div><div style="background-color:white;display:inline-block;width:80px;height:80px;" id="fiveF"></div><div style="background-color:white;display:inline-block;width:80px;height:80px;" id="fiveG"></div><br>
 
-<div style="background-color:white;display:inline-block;width:80px;height:80px;" id="sixA"></div><div style="background-color:white;display:inline-block;width:80px;height:80px;" id="sixB"></div><div style="background-color:white;display:inline-block;width:80px;height:80px;" id="sixC"></div><div style="background-color:white;display:inline-block;width:80px;height:80px;" id="sixD"></div><div style="background-color:white;display:inline-block;width:80px;height:80px;" id="sixE"></div><div style="background-color:white;display:inline-block;width:80px;height:80px;" onclick="click_sixF" id="sixF"></div><div style="background-color:white;display:inline-block;width:80px;height:80px;" id="sixG"></div><br>
+<div style="background-color:white;display:inline-block;width:80px;height:80px;" id="sixA" value=nothing></div><div style="background-color:white;display:inline-block;width:80px;height:80px;" id="sixB"></div><div style="background-color:white;display:inline-block;width:80px;height:80px;" id="sixC"></div><div style="background-color:white;display:inline-block;width:80px;height:80px;" id="sixD"></div><div style="background-color:white;display:inline-block;width:80px;height:80px;" id="sixE"></div><div style="background-color:white;display:inline-block;width:80px;height:80px;" onclick="click_sixF" id="sixF"></div><div style="background-color:white;display:inline-block;width:80px;height:80px;" id="sixG"></div><br>
 
 
 </body>
