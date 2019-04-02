@@ -1,6 +1,7 @@
 <html>
 <title>Four Square</title>
 <head>
+<h1> The first player to get four of their color pieces in a row (horizontal, vertical, or diagonal) is the winner. </h1>
 
 <style>
 div {	border-style: solid;
